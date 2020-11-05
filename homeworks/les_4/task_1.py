@@ -6,12 +6,10 @@
 
 from sys import argv
 
-_, hour, price, bonus, *__ = argv
-
 try:
+    _, hour, price, bonus, *_ = argv
     result = float(hour) * float(price) + float(bonus)
     print(result)
 except ValueError as e:
     print('Ошибка ввода')
     print(e)
-
